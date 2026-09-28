@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>AgroManager Pilot 0.11.9.74</title>
+  <link rel="stylesheet" href="styles.css?v=011974" />
+</head>
+<body>
+  <div id="app" class="shell">
+    <aside class="sidebar">
+      <div class="brand"><div class="brand-mark">AM</div><div><strong>AgroManager</strong><span>PILOT 0.11.9.74 · STABLE BUILD</span></div></div>
+      <nav id="nav" class="nav" aria-label="Основное меню">
+        <button class="nav-item active" data-page="dashboard"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></svg><span>Обзор</span></button>
+        <button class="nav-item" data-page="management"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v14H4zM7 9h4m2 0h4M7 13h2m2 0h6M7 17h7"/></svg><span>Центр управления</span></button>
+        <button class="nav-item" data-page="calendar"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14a2 2 0 0 1 2 2v14H3V6a2 2 0 0 1 2-2Zm2-2v4m10-4v4M3 9h18M7 13h2m3 0h2m3 0h1M7 17h2m3 0h2"/></svg><span>Агрокалендарь</span></button>
+        <button class="nav-item" data-page="weather"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 18h10a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.4 8.7 4.5 4.5 0 0 0 7 18ZM12 2v2M4.9 4.9l1.4 1.4M19.1 4.9l-1.4 1.4"/></svg><span>Погода</span></button>
+
+        <button class="nav-item nav-group-start" data-page="fields"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 20c4-7 7-11 16-16M5 5c6 0 9 3 9 8-5 0-9-2-9-8Zm6 10c3 0 6 1 8 4"/></svg><span>Поля</span></button>
+        <button class="nav-item" data-page="agronomy"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21v-9m0 1c-5 0-8-3-8-8 5 0 8 3 8 8Zm0 3c0-5 3-8 8-8 0 5-3 8-8 8Z"/></svg><span>Агрономия</span></button>
+        <button class="nav-item" data-page="operations"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 3h12v18H6zM9 7h6M9 11h6M9 15h3m4 0 1.5 1.5L20 14"/></svg><span>Агрооперации</span></button>
+        <button class="nav-item" data-page="agroPlan"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h14v16H5zM8 8h8M8 12h8M8 16h5"/></svg><span>План агроопераций</span></button>
+        <button class="nav-item" data-page="processes"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h11m0 0-3-3m3 3-3 3M20 17H9m0 0 3 3m-3-3 3-3"/></svg><span>Процессы</span></button>
+
+        <button class="nav-item nav-group-start" data-page="materials"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 8 4-8 4-8-4 8-4Zm-8 8 8 4 8-4M4 15l8 4 8-4"/></svg><span>Материалы</span></button>
+        <button class="nav-item" data-page="warehouse"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9 12 3l9 6v12H3V9Zm5 12v-7h8v7M7 10h10"/></svg><span>Склад</span></button>
+        <button class="nav-item" data-page="infrastructure"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 21V9l8-5 8 5v12M8 21v-5h8v5M8 11h2m4 0h2"/></svg><span>Инфраструктура</span></button>
+        <button class="nav-item" data-page="equipment"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 17h11l2-5h-4l-2-4H8l-2 4H3v5h3Zm1 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm10 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Z"/></svg><span>Техника</span></button>
+        <button class="nav-item" data-page="staff"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8Zm8-1a3 3 0 1 0 0-6m-14 17c0-5 2-8 6-8s6 3 6 8m1-7c3 0 5 2 5 7"/></svg><span>Сотрудники</span></button>
+
+        <button class="nav-item" data-page="outsideWork"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16v12H4zM8 7V4h8v3M8 12h8m-4-3v6"/></svg><span>Работа по найму</span></button>
+        <button class="nav-item nav-group-start" data-page="contracts"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4h10l2 2v14H5V6l2-2Zm2 0v3h6V4M8 11h8M8 15h5M3 13h2m14 0h2"/></svg><span>Контракты</span></button>
+        <button class="nav-item" data-page="deliveryContracts"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16v12H4zM8 3v6m8-6v6M7 13h10M7 16h6"/></svg><span>Контракты поставки</span></button>
+        <button class="nav-item" data-page="market"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9h16l-1-5H5L4 9Zm1 0v11h14V9M8 20v-6h8v6"/></svg><span>Рынок</span></button>
+        <button class="nav-item" data-page="financing"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 9h18M5 9v9m4-9v9m6-9v9m4-9v9M2 21h20M12 3l9 4H3l9-4Z"/></svg><span>Финансирование</span></button>
+        <button class="nav-item" data-page="finance"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M14.5 8.5H11a2 2 0 1 0 0 4h2a2 2 0 1 1 0 4H9.5M12 6v12"/></svg><span>Финансы</span></button>
+        <button class="nav-item nav-group-start" data-page="tutorial"><svg class="nav-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h7a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H4V4Zm16 0h-7a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h7V4Z"/></svg><span>Обучение</span></button>
+      </nav>
+      <div class="sidebar-foot">
+        <div class="label">Сохранения</div><div id="saveStatus" class="muted">Файл: загрузка…</div>
+        <button id="manualSaveBtn" class="ghost">Сохранить</button>
+        <button id="manualLoadBtn" class="ghost">Загрузить</button>
+        <button id="resetBtn" class="ghost danger">Новая игра</button>
+        <button id="exitBtn" class="ghost">Выйти из приложения</button>
+      </div>
+    </aside>
+    <main class="main">
+      <header class="topbar">
+        <div><div class="eyebrow">ТЕКУЩЕЕ ВРЕМЯ</div><div id="clock" class="clock">01 янв. 2026 · 08:00</div></div>
+        <div class="time-tools">
+          <div class="speedbar" aria-label="Скорость времени">
+            <button data-speed="0" class="speed">Ⅱ</button><button data-speed="1" class="speed active">×1</button><button data-speed="5" class="speed">×5</button><button data-speed="20" class="speed">×20</button><button data-speed="60" class="speed">×60</button><button data-speed="240" class="speed">×240</button><button data-speed="1440" class="speed">1д/с</button>
+          </div>
+          <div class="skipbar" aria-label="Быстрая перемотка"><button data-skip="5" class="speed">+5 дней</button><button data-skip="10" class="speed">+10 дней</button></div>
+        </div>
+        <div class="moneybox"><span>СЧЁТ</span><strong id="money">10 000 000 ₽</strong></div>
+      </header>
+      <section id="content" class="content"></section>
+    </main>
+  </div>
+  <div id="toast" class="toast" aria-live="polite"></div>
+  <script src="equipment.js?v=011974"></script>
+  <script src="app.js?v=011974"></script>
+</body>
+</html>
